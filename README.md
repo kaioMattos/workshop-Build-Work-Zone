@@ -20,11 +20,9 @@ Este repositório contém o material para a sessão SAP BTP Experience 2023 - Um
 
 Este Hands-On apresenta aos participantes a criação de um site com o SAP Build Work Zone, standard edition (anteriormente conhecido como serviço SAP Launchpad) em sua conta Trial gratuita. Os participantes aprenderão como consumir conteúdo federado de sistemas SAP S/4HANA e como adicionar um aplicativo personalizado desenvolvido ao site. Por fim, eles consumirão seu site no aplicativo SAP Mobile Start.
 
-Antes de começar com os exercícios, dê uma olhada na seguinte [Visão geral do SAP Build Work Zone](intro/overview.md).
-
 O Hands-On consiste em quatro seções principais:
 1. Crie seu primeiro site e adicione um aplicativo a ele.
-2. Consumir conteúdo SAP S/4HANA Business no site (esta parte será mostrada como uma demonstração, mas você pode seguir o tutorial[ Melhore seu site SAP Launchpad com conteúdo federado SAP S/4HANA](https://developers.sap.com/mission.launchpad-s4hana.html) para consumir conteúdo federado de sua própria avaliação do SAP S/4HANA sistema. Saiba mais sobre [federação de conteúdo](intro/federation.md).
+2. Consumir conteúdo SAP S/4HANA Business no site (esta parte será mostrada como uma demonstração, mas você pode seguir o tutorial[ Melhore seu site SAP Launchpad com conteúdo federado SAP S/4HANA](https://developers.sap.com/mission.launchpad-s4hana.html)
 3. Crie seu próprio aplicativo personalizado desenvolvido com o Business Application Studio e integre-o facilmente em seu site. Devido a limitações de tempo, você criará apenas um aplicativo muito simples durante o Hands-On. Alternativamente, você também pode fazer [este Exercicio](https://developers.sap.com/tutorials/appstudio-fioriapps-create.html) e criar um aplicativo que consome dados de um sistema de back-end. Mas observe que primeiro você precisa [criar uma conta no sistema de demonstração do SAP Gateway](https://developers.sap.com/tutorials/gateway-demo-signup.html) e, em seguida, [conectar seu teste BTP a ele](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-gateway-connection.html). Isso levará cerca de 20 minutos a mais.
 4. Acesse seu site com o SAP Mobile Start.
 
