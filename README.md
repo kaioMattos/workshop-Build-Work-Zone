@@ -31,7 +31,7 @@ O Hands-On consiste em quatro seções principais:
 
 ## Requisitos
 
-Este exercício é executado em um ambiente de teste SAP BTP. Você precisa primeiro se registrar para obter sua própria conta de avaliação gratuita. Você pode se registrar em uma [conta de avaliação usando este link](https://account.hana.ondemand.com/#/home/welcome) Crie uma conta de avaliação. Role para baixo e clique em Obter avaliação agora. Para o último exercício, você também precisará de um telefone celular (iOS ou Android) capaz de executar o SAP Mobile Start.
+Este exercício é executado em um ambiente de teste SAP BTP. Você precisa primeiro se registrar para obter sua própria conta de avaliação gratuita. Você pode se registrar em uma [conta de avaliação usando este link](https://account.hana.ondemand.com/#/home/welcome). Para o último exercício, você também precisará de um telefone celular (iOS ou Android) capaz de executar o SAP Mobile Start.
 
 ## exercícios
 
@@ -52,4 +52,4 @@ Este exercício é executado em um ambiente de teste SAP BTP. Você precisa prim
 
 ## Como obter suporte
 
-O suporte para o conteúdo deste repositório está disponível durante o hands-on para a qual este conteúdo foi projetado. Caso contrário, você pode solicitar suporte por meio da guia [Issues](../../issues) tab.
+O suporte para o conteúdo deste repositório está disponível durante o hands-on para a qual este conteúdo foi projetado. Caso contrário, você pode solicitar suporte por meio da guia [Issues](../../issues).
