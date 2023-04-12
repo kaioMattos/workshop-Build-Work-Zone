@@ -1,60 +1,58 @@
-# Exercise 2.1: Set Up SAP Business Application Studio for Development
+# Exercício 2.1: Configurar o SAP Business Application Studio para desenvolvimento
 
-SAP Business Application Studio is a development environment available on SAP Business Technology Platform. In recent trial accounts, the SAP Business Application Studio is subscribed to by default, so you can directly launch it and create your first Dev Space.
+O SAP Business Application Studio é um ambiente de desenvolvimento disponível na SAP Business Technology Platform. Em contas de Trial mais atual, o SAP Business Application Studio é assinado por padrão, para que você possa iniciá-lo diretamente e criar seu primeiro Dev Space.
 
 
 
-### Step 1: Launch SAP Business Application Studio
+### Etapa 1: Iniciar o SAP Business Application Studio
 
-1. Open the [SAP BTP Trial Start page](https://account.hanatrial.ondemand.com) and login if required. 
-2. Click **SAP Business Application Studio** to launch SAP Business Application Studio.
+1. Abra a [SAP BTP Trial](https://account.hanatrial.ondemand.com)  faça o login, se necessário. 
+2. Clique em **SAP Business Application Studio** para Iniciar
 
     ![launch sap business application studio](images/1-AccessBAS.png)
+    
+    >**CUIDADO: Se você receber uma mensagem de erro e sua conta não tiver sido criada recentemente, será necessário adicionar uma assinatura do SAP Business Application Studio. Responda à pergunta de validação da etapa atual, vá para a próxima etapa deste tutorial e prossiga a partir daí.
 
-    >If you receive an error message and your recently created account was created with error, it is recommended that you re-create your account: delete the account and then [Get a Free Account on SAP BTP Trial](hcp-create-trial-account).
-
-    >**CAUTION:** If you receive an error message and your account was not created recently, you need to add a subscription to SAP Business Application Studio. Answer the validation question of the current step, go to the next step in this tutorial, and proceed from there.
-
-2. You might see a pop-up about the Trial Privacy Statement. Confirm with **OK**.
+2. Você pode ver um pop-up sobre a Declaração de Privacidade de Avaliação. Confirme com **OK**.
 
     ![Privacy](images/2-BASPrivacy.png)
 
-3. A new tab opens. If you have not created a dev space, the welcome page for SAP Business Application Studio loads. 
+3. Uma nova guia é aberta. Se você não criou um espaço de desenvolvimento, a página de boas-vindas do SAP Business Application Studio é carregada.
 
     ![sap business application studio welcome](images/3-BASWelcome0.png)
 <br>
 
-### Step 2: Create a Dev Space
+### Etapa 2: criar um espaço de desenvolvimento
 
-1. On the Welcome page, click **Create Dev Space**.
+1. Na página de boas-vindas, clique em **Create Dev Space**.
 
  ![Create Dev Space](images/4-BASWelcome.png)
  
-2. In the *Create a New Dev Space* screen, enter **WorkZoneContent** as name for your new workspace. Select **SAP Fiori** as the type of application you want to create. Then click **Create Dev Space**.
+2. Na tela *Create a New Dev Space*, insira  **Fiori_BTP_EXP** como nome para seu novo espaço de trabalho. Selecione **SAP Fiori** como o tipo de aplicativo que deseja criar. Em seguida, clique em **Create Dev Space**.
 
  ![Create Dev Space](images/5a-CreateDevSpace.png)
  
- > The dev space is in status **STARTING**. Wait until it is in status **RUNNING**. This might take a couple of minutes.
+ > O espaço dev está no status **STARTING** . Aguarde até que esteja no estado **RUNNING** . Isso pode levar alguns minutos.
 
  ![Create Dev Space](images/6-Starting.png)
  
  <br>
  
- ### Step 3: Enter the Dev Space
+ ### Passo 3: Entre no Dev Space
  
- 1. When the status has changed to **RUNNING**, click the name of the dev space **WorkZoneContent**.
+ 1. Quando o status for alterado para **RUNNING**, clique no nome do espaço de desenvolvimento **Fiori_BTP_EXP**.
  
  ![Access Dev Space](images/7-Running.png)
  
- 2. The dev space opens and the *Get Started* tab appears.
+ 2. O espaço de desenvolvimento é aberto e a guia *Get Started* é exibida..
 
  ![Welcome Tab](images/8a-Get-Started.png)
  
 <br>
 
-## Summary
+## Resumo
 
-You have successfully accessed SAP Business Application Studio and created a Dev Space.
+Você acessou com sucesso o SAP Business Application Studio e criou um Dev Space.
 
-Continue to - [Exercise 2.2 - Create an SAP Fiori App Using SAP Business Application Studio](../ex2.2-alternative/README.md).
+Continue em - [Exercício 2.2 - Criar um aplicativo SAP Fiori usando o SAP Business Application Studio .](../ex2.2-alternative/README.md).
 

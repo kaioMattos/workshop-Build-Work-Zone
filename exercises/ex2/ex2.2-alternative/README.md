@@ -1,101 +1,101 @@
-# Exercise 2.2 - Create an SAP Fiori App Using SAP Business Application Studio
+# Exercício 2.2 - Criar um aplicativo SAP Fiori usando o SAP Business Application Studio
 
-In this exercise, you will develop a simple SAPUI5 freestyle application, adhering to SAP Fiori design guidelines. 
+Neste exercício, você desenvolverá um aplicativo SAPUI5 freestyle simples, seguindo as diretrizes de design do SAP Fiori.
 
 <br>
 
-### Step 1: Create an SAPUI5 app from a template
+### Etapa 1: criar um aplicativo SAPUI5 a partir de um modelo
 
-Using the app creation wizard you can at any point click the Back button to go back to the previous step, or click a specific wizard step to go back to that step.
+Usando o assistente de criação de aplicativo, você pode, a qualquer momento, clicar no botão Voltar para voltar à etapa anterior ou clicar em uma etapa específica do assistente para voltar a essa etapa.
 
-1. In the *Get Started* tab click **Start from template**.
+1. Na aba *Get Started* clique **Start from template**.
 
    ![Start from Template](images/n01-craete-app-frrom-template.png)
 
-2. Select the **SAP Fiori Application** tile, and click **Start**.
+2. Selecione **SAP Fiori Application**, e clique em **Start**.
 
    ![SAP Fiori](images/n02-choose-template-type.png)
 
-3. In the *Template Selection* screen, select *Application Type* **SAPUI5 freestyle** from the drop-down
+3. Na tela *Template Selection*, selecione *Application Type* **SAPUI5 freestyle**
 
    ![SAPUI5 Freestyle](images/n03-choose-app-type.png)
 
-4. Select the template **SAPUI5 Appliction** to choose a basic empty UI Application and click **Next**. 
+4. Selecione **SAPUI5 Appliction** escolhaaa basic UI Application e clique em **Next**. 
 
    ![SAPUI5 App Type](images/n04-choose-empty-UI5-App.png)
    
-5. For *Data Source and Service Selection*, select **None** from the drop-down as for this simple app, you will not consume any data from a backend system. Then click **Next**.
+5. Para *Data Source and Service Selection*, selecione **None** nosso aplicativo não irá consumir nenhum sistema backend. Agora clique em **Next**.
 
    ![Select Data Source](images/n05-select-datasource-none.png)
 
-6. In the next step, you can choose a name of the default UI5 view that would be generated. You can simply keep View1 here and click **Next**.
+6. No proximo passo, você pode escolher um nome padrão para a view ou manter View1, clique em **Next**.
 
    ![View name](images/n06-keep-view-name.png)
 
-7. Select the following **Project Attributes**, then click **Next**.
+7. Selecione os seguintes **Project Attributes**, e clique em **Next**.
 
     | Step | Parameter | Value |
     |:-----|:----------|:------|
     | A | Module name | **`helloworld`** |
     | B | Application title | **Hello World** |
-    | C | Application namespace | **teched** |
+    | C | Application namespace | **técnico** |
     | D | Description | **SAPUI5 freestyle application** |
-    | E | Project folder path | **`/home/user/projects`** (default)|
-    | F | Minimum SAPUI5 version | **1.102.1** (default) |
+    | E | Project folder path | **`/home/user/projects`** (padrão)|
+    | F | Minimum SAPUI5 version | **1.102.1** (padrão) |
     | G | Add deployment configuration | **Yes**|
     | H | Add FLP configuration | **Yes** |
-    | I | Configure advanced options | **No** (default) |
+    | I | Configure advanced options | **No** (padrão) |
 
    ![Project Attributes](images/n07-enter-project-attributes.png)
     
-7. For **Deployment Configuration**, select **Cloud Foundry** from target drop-down and let the *Destination Name* as **None** which is default. Click **Next**. Select the **Yes** radio-button for the last input `Add Application to managed application router?`
+8. Para **Deployment Configuration**, selecione **Cloud Foundry** na lista e o *Destination Name* como **None**. clique em **Next**. selecione o botão de opção **Yes** no input `Add Application to managed application router?`
 
    ![Deployment Settings](images/n08-deployment-config.png)
 
-8. Finally, in the **Fiori Launchpad Configuration** screen, select the following, and click **Finish**. 
+9. Por fim, na tela **Fiori Launchpad Configuration**  selecione o seguinte e clique em **Finish**. 
 
     | Step | Parameter | Value |
     |:-----|:----------|:------|
     | A | Semantic Object | **helloworld** |
     | B | Action | **display** |
     | B | Title | **My Hello World** |
-    | B | Subtitle (optional) | **Custom UI5 App** |
+    | B | Subtitle (optional) | **App Customizado UI5** |
 
     ![Launchpad configuration](images/n09-flp-config.png)
 
 
-9. Wait until the installation of project dependencies is completed. A notification that "The project has been generated" appears at the bottom right of the screen. You would get a popup as shown below. Select **open folder** to see the generated Project folder structure in the workspace.
+10. Aguarde até que a instalação das dependências do projeto seja concluída. Uma notificação de que "O projeto foi gerado" aparece na parte inferior direita da tela. Você obteria um pop-up como mostrado abaixo. Selecione  **open folder** para ver a estrutura da pasta do Projeto gerada no espaço de trabalho.
     
     ![application generated](images/n10-open-folder-in-workspace.png)
     
- In case this takes longer or the popup doesn't appear, you can also open the folder from the left panel **Open Folder** and selecting the folder path as `/home/user/projects/` and choose **helloworld** from the drop down.
+ Caso demore muito ou o pop-up não apareça, você também pode abrir a pasta no painel esquerdo **Open Folder**  e selecionar o caminho da pasta como `/home/user/projects/` escolha **helloworld**.
 
 ![application generated](images/n10a-alternative-open-folder.png)
 
 <br>
 
-### Step 4: Run the App Locally in the Dev Space
+### Etapa 4: execute o aplicativo localmente no Dev Space
 
-To test your app, you can now run it locally within SAP Business Application Studio.
+Para testar seu aplicativo, agora você pode executá-lo localmente no SAP Business Application Studio.
 
-1.	In the left *Explorer* panel, right-click on the **webapp** folder and select **Preview Application** from the context menu.
+1.	No painel esquerdo do *Explorer* clique com o botão direito do mouse na pasta **webapp** e selecione **Preview Application** no menu de contexto.
 
     ![Preview App](images/n12-preview-app.png)
 
-2.	Select the first entry **`Start fiori run...`** to run the app locally in a sandbox launchpad shell.
+2.	Selecione a primeira entrada **`Start fiori run...`** para executar o aplicativo localmente.
 
     ![Start helloworld](images/n13-select-run-command.png)
 
-3. You should now see the application with header titlew as *Hello World*. You don't see any other content since we did not add any other UI elements to the content area.
+3. Agora você deve ver o aplicativo *Hello World*
 
- >If your browser does not allow opening a new tab, you may see a message in the upper left corner with a link where you can allow opening a new tab.
+ >Se o seu navegador não permitir a abertura de uma nova guia, você poderá ver uma mensagem no canto superior esquerdo com um link para permitir a abertura de uma nova guia.
    
    ![select flp lauchpad](images/n18-preview-app.png)
    
 <br>
 
-## Summary
+## Resumo
 
-You've now created a simple app. In the next exercise you will build the app and deploy it to Cloud Foundry.
+Agora você criou um aplicativo simples. No próximo exercício, você criará o aplicativo e o implementará no Cloud Foundry.
 
-Continue to - [Exercise 2.3 - Build and Deploy your application ](../ex2.3/README.md)
+Continue para - [Exercício 2.3 - Crie e implemente seu aplicativo ](../ex2.3/README.md)

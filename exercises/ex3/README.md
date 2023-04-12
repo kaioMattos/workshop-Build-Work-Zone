@@ -1,111 +1,109 @@
-# Exercise 3: Access Your Site with SAP Mobile Start
+# Exercício 3: Acesse seu site com o SAP Mobile Start
 
-In this exercise, you will learn how to connect the SAP Mobile Start native app with your site. 
+Neste exercício, você aprenderá como conectar o aplicativo nativo SAP Mobile Start ao seu site.
 
 <br>
 
-### Step 1: Enable SAP Mobile Start in Site Settings
+### Etapa 1: ativar o SAP Mobile Start nas configurações do site
 
 
-1.  Go back to the Site Directory. 
+1.  Volte para o Site Directory.
 
-3.  Click the settings icon on the 'JobCore' tile to open the Site Settings.
-
+2.  Clique no ícone de configurações no bloco 'JobCore' para abrir as configurações do site.
     ![Access site settings](images/1-edit-site.png)
 
-2.  Within the Site Settings make sure that SAP Mobile Start is enabled.
+3.  Nas configurações do site, certifique-se de que o SAP Mobile Start esteja ativado.
 
     ![Enable Mobile Start flag in Site settings](images/2-mobile-start-yes.png)
 
-3.  If it is not, click edit, set the SAP Mobile Start toggle to **YES**, then click **Save**.
+4.  Se não estiver, clique em editar, defina a alternância do SAP Mobile Start como **YES**, e clique em **Save**.
 
-4. Get back to Site Directory using the back icon ![back](images/3-back.png).
+5.  Volte ao Site Directory usando o ícone Voltar ![back](images/3-back.png).
 
 <br>
 
-### Step 2: Access QR-Codes in the User Settings
+### Etapa 2: acesse os códigos QR nas configurações do usuário
 
-1.  Open your Site via the **Go to site** icon on the **JobCore* tile.
+1.  Abra seu site por meio do ícone **Go to site** no tile **JobCore*.
 
     ![Access site](images/4-go-to-site.png)
 
-2.  On the site, open the user menu via the user initials on the top right. Then choose **Settings**.
+2.  No site, abra o menu do usuário por meio das iniciais do usuário no canto superior direito. Em seguida, escolha **Settings**.
 
     ![Access User Settings](images/5-settings.png)
 
-3.  In the Settings screen, choose the **SAP Mobile Start Application** tab.
+3.  Na tela Configurações, selecione a aba **SAP Mobile Start Application**.
 
     ![SAP Mobile Start tab](images/6-sap-mobile-start.png)
 
-    (If the option is not available make sure SAP Mobile Start is enabled in the Site Settings (Step 1), also refreshing the site might be required for your changes to become active.)
+   (Se a opção não estiver disponível, certifique-se de que o SAP Mobile Start esteja habilitado nas configurações do site (etapa 1), também pode ser necessário atualizar o site para que suas alterações se tornem ativas.)
 
-    In this screen you can select your type of device (Android or iOS) and switch between two QR Codes via the toggle button:
+    Nesta tela você pode selecionar seu tipo de dispositivo (Android ou iOS) e alternar entre dois QR Codes através do botão de alternância:
 
       1. **Install**:
-      This QR-Code can be used to install the SAP Mobile Start app on your device. It's a direct link to the Apple app store page.
+      Este QR-Code pode ser usado para instalar o aplicativo SAP Mobile Start em seu dispositivo. É um link direto para Apple app store.
 
       2. **Register**:
-      This QR-Code is used later within the SAP Mobile Start app to register it to your site.
+      Este QR-Code é usado posteriormente no aplicativo SAP Mobile Start para registrá-lo em seu site.
 
     ![QR Code Selection](images/7-qr-codes.png)
 
->It is also possible to have SAP Mobile Start deployed via Mobile Device Management. With that, a specific site can be preconfigured and no QR-Code registration is needed.
 
 <br>
 
-### Step 3: Install SAP Mobile Start on your mobile device
+### Passo 3: Instale o SAP Mobile Start no seu dispositivo
 
-Use the Install QR-Code from Step 2 to install SAP Mobile Start on your Mobile Device. Alternatively, you can search for SAP Mobile Start in the respective App Stores.
+Use o QR-Code de instalação da Etapa 2 para instalar o SAP Mobile Start em seu dispositivo. Como alternativa, você pode procurar o SAP Mobile Start nas respectivas App Stores.
 
 <br>
 
-### Step 4: Onboard SAP Mobile Start
+### Etapa 4: integração do SAP Mobile Start
 
-1.	Use the toggle in the *SAP Mobile Start Application* settings to switch to the **Register** QR-code. Scroll down if required.
+1.	Use a alternância nas configurações *SAP Mobile Start Application* alternando o código QR **Register** QR-code. Scroll down if required.
 
-2. Open the SAP Start app on your mobile device, press the **Scan** button and make sure to allow camera access.
+2. Abra o aplicativo SAP Start em seu dispositivo, pressione o botão **Scan** e certifique-se de permitir o acesso à câmera.
 
-    (Below the scan button you will find the option to enter the demo mode. This will demonstrate how a fully configured launchpad site with the addition of SAP Task Center looks like.)
+    (Abaixo do botão de digitalização, você encontrará a opção de entrar no modo de demonstração. Isso demonstrará como é um site de barra de ativação totalmente configurado com a adição do SAP Task Center.)
 
-2.	Next, use your device camera to scan the **Register QR-Code** in the launchpad user settings. If the scan succeeded, you can continue with the onboarding process.
+3.	Em seguida, use a câmera do seu dispositivo para escanear o **Register QR-Code** nas configurações do usuário do launchpad. Se a verificação for bem-sucedida, você poderá continuar com o processo de integração.
 
     ![Onboard SAP Mobile Start](images/mobile-start-onboarding.png)
 
-3.  Follow the guided onboarding process within the app:
+4.  Siga o processo de integração guiado no aplicativo:
 
-  - Log in with your user
+  - Faça login com seu usuário
 
-  - Accept the End User License Agreement and Data Privacy Statement
+  - Aceite o Contrato de licença do usuário final e a Declaração de privacidade de dados
 
-  -	Depending on your setup you might need to create a passcode / allow biometric authentication.
+  -	Dependendo da sua configuração, pode ser necessário criar uma senha/permitir a autenticação biométrica.
 
 
-    After completing the onboarding process, you will be directed to the initial **Start** screen.
+   Depois de concluir o processo de integração, você será direcionado para a tela **Start** screen.
 
 <br>
 
-### Step 5: Try the App
+### Etapa 5: experimente o aplicativo
 
 
 ![SAP Mobile Start Screens](images/mobile-start-result.png)
 
-1.	You can use the navigation icons on the bottom the move between the Start and the Application screen. The Start screen offers an overview for quick access to your most used apps. The Application screen lists all groups and apps of the site. If you set up SAP Task Center integration in your site, you will see an additional icon **To Do** on the bottom where you can find all your workflow items.
+1.	Você pode usar os ícones de navegação na parte inferior para se mover entre as telas Iniciar e Aplicativo. A tela inicial oferece uma visão geral para acesso rápido aos seus aplicativos mais usados. A tela Aplicativo lista todos os grupos e aplicativos do site. Se você configurar a integração do SAP Task Center em seu site, verá um ícone adicional  **To Do** na parte inferior, onde poderá encontrar todos os itens do fluxo de trabalho.
 
-2.  Both screens the Start & Application screen have the notification icon and the user (settings) icon. Use them to access the notification section or the Profile and Settings page.
+2.  Ambas as telas, a tela Iniciar e Aplicativo, têm o ícone de notificação e o ícone de usuário (configurações). Use-os para acessar a seção de notificação ou a página Perfil e configurações.
 
-3.  Within the Application screen you can use the search bar to find specific applications.
+3.  Na tela Aplicativo, você pode usar a barra de pesquisa para encontrar aplicativos específicos.
 
-4.  You can click on app tiles to open your application of choice.
+4.  Você pode clicar nos blocos de aplicativos para abrir o aplicativo de sua escolha.
 
-5.	From the profile and settings you can choose **Sign Out** to return to the initial onboarding screen, in case you want to connect to a different site.
-
-
+5.	No perfil e nas configurações, você pode escolher **Sign Out** para retornar à tela inicial de integração, caso queira se conectar a um site diferente.
 
 
-## Summary
 
-### Congratulations! You have successfully completed this end-to-end workshop for configuring SAP Build Work Zone, standard edition!
 
-If you want to learn more about SAP Build Work Zone, please visit the [SAP Build Work Zone community page](https://community.sap.com/topics/mobile-experience/start). More Information about SAP Mobile Start is available at the [SAP Mobile Start community page](https://community.sap.com/topics/mobile-experience/start).
+## Resumo
 
-Go back to the [main document](../../README.md).
+### Parabéns! Você concluiu com sucesso este workshop completo para configurar o SAP Build Work Zone, standard edition!
+
+se vc quiser saber mais sobre o SAP Build Work Zone, visite a [Comunidade SAP Build Work Zone](https://community.sap.com/topics/mobile-experience/start). Mais informações sobre o SAP Mobile Start estão disponíveis na [Comunidade SAP Mobile Start](https://community.sap.com/topics/mobile-experience/start).
+
+Volte para o [conteúdo principal](../../README.md).

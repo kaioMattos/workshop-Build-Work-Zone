@@ -1,52 +1,51 @@
-# Add an SAPUI5 App to Your Site
+# Adicione um aplicativo SAPUI5 ao seu site
 
-In this exercise , you will use the **Content Manager** to add an SAPUI5 app to your  site. You will also create a group and assing the app to it.
+Neste exercício, você usará o **Content Manager** para adicionar um aplicativo SAPUI5 ao seu site. Você também criará um grupo e atribuirá o aplicativo a ele.
 
-## Prerequisites
- - You have already created the `JobCore` site.  
+## Pré-requisitos
+ - Você já criou o `JobCore`.  
 
 <br>
 
-### Step 1: Open Content Manager
+### Step 1:  abra o Content Manager
 
- Click the Content Manager icon in the side panel to open the **Content Manager**.
+ Clique no ícone do Content Manager  no painel lateral para abrir o **Content Manager**.
 
->The **Content Manager** has two tabs: **My Content** where you can manually configure content items and view any other available content items, and the **Content Explorer** where you can explore exposed content from available channels, select the content, and add it to your own content.
+>O  **Content Manager** tem duas guias: **My Content** , onde você pode configurar manualmente os itens de conteúdo e visualizar quaisquer outros itens de conteúdo disponíveis, e o **Content Explorer** , onde pode explorar o conteúdo exposto de canais disponíveis, selecionar o conteúdo e adicioná-lo ao seu próprio conteúdo.
 
   ![Open Content Manager](images/4a-content-manager.png)
-  
-  > If you want, you can click the *Expand* icon ![Expand Icon](images/5-Expand.png) to see the names of the menu entries in addition to the icons.
+
 
 <br>
 
-### Step 2: Create and configure new app
+### Etapa 2: criar e configurar um novo aplicativo
 
-1.  Click **+ New** and select **App** from the list.  
+1.  Clique em **+ New** e selecione  **App** na lista.
 
     ![Add an app](images/5a-new-app.png)
 
 
-    The app editor opens with the **PROPERTIES** tab in focus.
+    O editor de aplicativos é aberto com a guia **PROPERTIES** tab in focus.
 
-2. Enter the following values:
+2. Digite os seguintes valores:
 
     * **Title**: `New Orders`
 
-    * **Open App**: In place
+    * **Open App**: no lugar
 
     * **URL**:  `https://sapui5.hana.ondemand.com/test-resources/sap/m/demokit/cart/webapp/index.html`
 
     ![Enter app properties](images/5b-app-properties.png)
 
-    >When working in your own environment, it's better to integrate SAPUI5 apps using the HTML5 apps repository. This configuration allows you to better manage your content in the Dev-QA-Prod lifecycle. You will see how to do this in exercise 2.
+    >Ao trabalhar em seu próprio ambiente, é melhor integrar os aplicativos SAPUI5 usando o repositório de aplicativos HTML5. Essa configuração permite que você gerencie melhor seu conteúdo no ciclo de vida Dev-QA-Prod. Você verá como fazer isso no exercício 2.
 
-3. Click the **NAVIGATION** tab to specify the intent of your app.
+3. Clique na guia **NAVIGATION** para especificar a intenção do seu aplicativo.
 
     ![Go to Navigation](images/5c-go-to-navigation.png)
 
-    > The unique combination of a semantic object and an action is called an intent. It is used to define navigation to an application.
+    > A combinação única de um objeto semântico e uma ação é chamada de intenção. Ele é usado para definir a navegação para um aplicativo.
 
-4. Enter the following values:
+4. Digite os seguintes valores:
 
     * **Semantic Object**: `Order`
 
@@ -54,123 +53,116 @@ In this exercise , you will use the **Content Manager** to add an SAPUI5 app to 
 
     ![Add navigation properties](images/5d-navigation-props.png)
 
-5. Click the **VISUALIZATION** tab.
+5. Clique na guia **VISUALIZATION**.
 
-    In this tab, you specify how the tile for the app will be displayed in the site.
+    Nesta guia, você especifica como o Tile do aplicativo será exibido no site.
 
-6. Enter the following values:
+6. Digite os seguintes valores:
 
       * **Subtitle**: `Shopping Cart `
 
       * **Information**:  `Order Now!`
 
-      * **Icon**: Click the browse icon, type `my-sales-order`, click on the displayed icon, and click **OK**.
+      * **Icon**: Clique no ícone de navegação, digite `my-sales-order`, clique no ícone exibido e clique em **OK**.
 
-      On the right, you can see a preview of the tile with all the properties you entered.
-      Click **Save**.
+      À direita, você pode ver uma visualização do bloco com todas as propriedades inseridas. Clique em **Save**.
 
     ![Add visualization properties](images/6a-visualization.png)
 
 <br>
 
-### Step 3: View the app that you created
+### Etapa 3: visualizar o aplicativo que você criou
 
-Click the **Back** icon to navigate back to the *Content Manager*. You could also click the Content Manager icon in the left side panel.
+Clique no ícone **Back** para navegar de volta ao *Content Manager*. Você também pode clicar no ícone do Content Manager no painel esquerdo.
 
   ![Go back to Content Manager](images/7a-back-to-content-manager.png)
 
-You can see your app in the list of content items:
+Você pode ver seu aplicativo nesta lista
 
 ![View app in content manager list](images/8a-view-app.png)
 
-For end users to access the app in runtime, you must assign the app to a role. You also need to assign the app to a group so that it is visible in the site.
-
-This is described in the following steps.
+Para que os usuários finais acessem o aplicativo em tempo de execução, você deve atribuir o aplicativo a uma role.Você também precisa atribuir o aplicativo a um grupo para que fique visível no site.
 
 <br>
 
-### Step 4: Assign the app to the Everyone role
+### atribuir o aplicativo à role Everyone 
 
 
->Content assigned to the `Everyone` role is visible to all users. In addition, the `Everyone` role is by default assigned to every site, so that you do not need to assign the role to the site to make its content available.
+>O conteúdo atribuído à role `Everyone`  fica visível para todos os usuários. Além disso, a role `Everyone`  é atribuída por padrão a cada site.
 
-1. Click the **Everyone** role.
+1. Clique na role **Everyone** .
 
     ![Select everyone role](images/9a-everyone-role.png)
 
-2. Click **Edit**.
+2. Clique em **Editar**.
 
     ![Click Edit](images/10a-edit.png)
 
-3. Click the search box in the **Assignments** panel on the right. Any available apps are shown in the list below.
+3. Clique na caixa de pesquisa no painel **Assignments** à direita. Todos os aplicativos disponíveis são mostrados na lista abaixo.   
 
-    >If you have many apps, you can type some letters of your app name in the search bar, (for example, `Or`) to search for the app.
+4. Na lista **Results** , clique no ícone **+** ao lado do `New Orders` para atribuir essa role ao seu aplicativo.
 
-4. In the **Results** list, click the **+** icon next to the `New Orders` app to assign this role to your app.
+    ![Assign role to app](images/11a-assign-role.png)    
 
-    ![Assign role to app](images/11a-assign-role.png)
-
-    You will see that the icon changes.
-
-5. Click **Save**.
+5. Clique em **Salvar**.
 
     ![Save](images/12a-save.png)
     
-6. Click the **Back** icon to navigate back to the *Content Manager*. 
+6. Clique no ícone **Back** para navegar de volta ao *Content Manager*. 
 
 <br>
 
-### Step 5: Create a group and assign the app to it
+### Etapa 5: crie um grupo e atribua o aplicativo a ele
 
 <br>
 
->A group is a set of one or more apps displayed together in a launchpad site.
+>Um grupo é um conjunto de um ou mais aplicativos exibidos juntos em um site da barra de ativação. A atribuição de aplicativos a grupos os torna visíveis para o usuário.
  Assigning apps to groups, makes them visible to the user.
    ![Group](images/13a-group.png)
    
 <br>
 
-1. Click **+ New** and select **Group** to create a group.
+1. Clique em  **+ New** e selecione **Group** para criar um grupo.
 
     ![Add a new group](images/14a-new-group.png)
 
-2. Enter `Purchasing` as the **Title** and in the **Assignments** panel, click inside the search box on the right of the screen, to show all available apps. You should see `New Orders`.
+2. Digite  `Purchasing` como **Title** e no painel **Assignments** clique dentro da caixa de pesquisa à direita da tela, para mostrar todos os aplicativos disponíveis. Você deveria ver `New Orders`.
 
-3. In the **Results** list, click **+** to assign the `New Orders` app to your group.
+3. Na lista **Results** , clique em **+** para atribuir o  `New Orders` ao seu grupo.
 
     ![Configure group properties](images/17a-configure-group.png)
 
-4. Click **Save**.
+4. Clique em **Save**.
 
     ![Save group](images/18a-save.png)
 
 <br>
 
-### Step 6: Review the site
+### Etapa 6: revise o site
 
-1. Click the Site Directory icon in the left panel to open the **Site Directory**.
+1. Clique no ícone Site Directory no painel esquerdo para abrir o **Site Directory**.
 
     ![Open Site Directory](images/19a-to-site-directory.png)
 
-2. On the `JobCore` tile, click the **Go to site** icon.
+2. No tile `JobCore` , clique no ícone  **Go to site**.
 
     ![Go to site](images/20a-open-site.png)
 
-3. This is what you will see:
+3. Isso é o que você vai ver:
 
     ![View site](images/21a-JobCore-site.png)
 
-    Your `New Orders` app is displayed in the `Purchasing` group.
+    Seu  App `New Orders` é exibido no grupo `Purchasing` .
     
 
-4. Click the `New Orders` tile to launch the app. 
+4. Clique no Tile `New Orders` para iniciar o aplicativo.
 
    ![View app](images/22a-new-orders-app.png)
 
-In the app, click on any category on the left to view product offerings.
+No aplicativo, clique em qualquer categoria à esquerda para ver as ofertas de produtos.
 
 <br>
 
-## Summary
+## Resumo
 
-You have successfully added an app to your site. In the SAP TechEd workshop, you will now see a demo how to consume federated content (roles with all their assigned apps, catalogs, groups, spaces and pages) from an SAP S/4HANA system. Go back to the [main exercise document](../../../README.md) to learn more about content federation.
+Você adicionou com sucesso um aplicativo ao seu site. Agora você verá agora uma demonstração de como consumir conteúdo federado de um sistema SAP S/4HANA Volte ao [Guia principal](../../../README.md) para saber mais sobre a federação de conteúdo.

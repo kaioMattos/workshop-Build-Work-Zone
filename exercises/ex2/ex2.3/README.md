@@ -1,66 +1,63 @@
-# Build and Deploy Your SAP Fiori App to SAP Business Technology Platform
+# Crie e implemente seu aplicativo SAP Fiori no SAP Business Technology Platform
 
-In this exercise you will learn:
-- how to build and deploy an application to SAP BTP, Cloud Foundry environment
-- how to configure Cloud Foundry settings in SAP Business Application StudioBuild and deploy your SAP Fiori MTA project to your SAP BTP, Cloud Foundry environment.
+Neste exercício você aprenderá:
+- como construir e implantar um aplicativo para SAP BTP, ambiente Cloud Foundry
+- como definir as configurações do Cloud Foundry no SAP Business Application Studio. Crie e implemente seu projeto SAP Fiori MTA em seu ambiente SAP BTP, Cloud Foundry.
 
 <br>
 
-### Step 1: Build the application
+### Etapa 1: criar o aplicativo
 
 
-1. Go back to the tab with the **SAP Business Application Studio** open.
+1. Volte para a guia com o **SAP Business Application Studio** aberto.
 
-2. In the folder structure of your project on the left, right-click the `mta.yaml` file and select **Build MTA Project**.
+2. Na estrutura de pastas do seu projeto à esquerda, clique com o botão direito do mouse no `mta.yaml` e selecione **Build MTA Project**.
 
 ![build mta](images/n01-build-mta.png)
 
-> The build process creates a multi-target archive (`MTAR`) file in your project that packages all the project modules for deployment. 
-> You can find the `MTAR` file in the `FioriDemo/mta_archives` folder.
+> O processo de construção cria um arquivo arquivo multi-target (`MTAR`) f que empacota todos os módulos do projeto para implantação. 
+> Você pode encontrar o `MTAR` arquivo na pasta `FioriDemo/mta_archives`.
 
 <br>
 
-### Step 2: Deploy your application to Cloud Foundry
+### Etapa 2: Implemente seu aplicativo no Cloud Foundry
 
-1. Open the **mta_archives** folder, right-click the **FioriDemo_0_0_1.mtar** file and select **Deploy MTA Archive**.
+1. Abra a pasta **mta_archives** clique com o botão direito do mouse no arquivo **FioriDemo_0_0_1.mtar** e  **Deploy MTA Archive**.
 
-> Before you can deploy your new application, you need to login to Cloud Foundry and select the target account to which you want to deploy the application. Therefore, a **Cloud Foundry Sign In** tab opens.
+> Antes de implementar seu novo aplicativo, você precisa fazer login no Cloud Foundry e selecionar a conta de destino na qual deseja implementar o aplicativo. Portanto, uma guia **Cloud Foundry Sign In** é aberta.
 
 ![deploy mtar](images/n02-deploy.png)
 
-2. If necessary, close the *Terminal* to see the full Sign in tab.
+2. Se necessário, feche o *Terminal* para ver a guia Login completa.
 
 ![close terminal](images/n03-close-terminal.png)
 
-3. Select the API endpoint, provide your credentials, and click **Sign in**.
+3. Selecione o endpoint da API, forneça suas credenciais e clique em **Sign in**.
 
     ![Cloud Foundry Login dialog](images/n05-sign-in.png)
     
-    > If you are not sure which API endpoint, Cloud Foundry organization, and Cloud Foundry space is correct, you can find this information in the *Overview* screen of the SAP BTP Cockpit.
+    > Se você não tiver certeza de qual terminal de API, organização e espaço, poderá encontrar estas informações na Visão geral do SAP BTP Cockpit.
     > 
     > ![BTP Cockpit](images/n04-btp-overview.png)
 
-4. Select the Cloud Foundry organization, Cloud Foundry space, and click **Apply**.
+4. Selecione a organization, o space e clique em **Apply**.
 
-    ![Select orga and space](images/n06-select-org.png)
-
-    > A *The Organization and Space have been set* notification appears at the bottom-right of your screen and the deployment to the space to which you are connected starts automatically. You can follow the deployment progress in the **Terminal** console at the bottom of your screen.
+    ![Select orga and space](images/n06-select-org.png)   
 
     ![Deployment Start](images/n07-org-set.png)
 
-5. Wait for the deployment to complete.
+5. Aguarde a conclusão da implantação.
 
-    >The deployment process is usually quite fast. When the deployment process is complete, the notifications **Process finished** and **Terminal will be reused by tasks** will appear at the bottom of the **Terminal** console.
+    >O processo de implantação costuma ser bastante rápido. Quando o processo de implantação estiver concluído, as notificações **Process finished** e **Terminal will be reused by tasks** aparecerão na parte inferior do **Terminal**.
 
     > ![deploy success](images/n08-deploy-finished.png)
 
-    >You can also find your deployed applications in the SAP BTP Cockpit in the HTML5 Applications area and launch them from there.
+    >Você também pode encontrar seus aplicativos implantados no SAP BTP Cockpit na área Aplicativos HTML5 e iniciá-los a partir daí.
     >
     >![HTML5 Apps](images/8-html5-apps.png)
 
-## Summary
+## Resumo
 
-With this, you have successfully completed the deployment of your SAP Fiori app to SAP BTP using SAP Business Application Studio.
-
-Continue to - [Exercise 2.4 - Integrate Your SAPUI5 App into Your Site](../ex2.4/README.md)
+Com isso, você concluiu com sucesso a implementação do seu aplicativo SAP Fiori no SAP BTP usando o SAP Business Application Studio.
+Continue para - [ Exercício 2.4 - Integrar seu aplicativo SAPUI5 em seu site](../ex2.4/README.md)
 

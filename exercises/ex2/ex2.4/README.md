@@ -1,140 +1,136 @@
-# Integrate Your SAPUI5 App into Your Launchpad Site
+# Integre seu aplicativo SAPUI5 ao seu Launchpad
 
-In this exercise, you will learn how to a custom-developed SAPUI5 app that has been deployed to SAP BTP, Cloud Foundry environment to your site.
+Neste exercício, você aprenderá como usar um aplicativo SAPUI5 desenvolvido de forma personalizada que foi implantado no ambiente SAP BTP, Cloud Foundry em seu Launchpad.
 
-## Prerequisites
- - You've already created the `JobCore` launchpad site.
- - You've deployed your SAPUI5 app (including the navigation properties), to SAP BTP, Cloud Foundry environment.
+## Pré-requisitos
+ - Você já criou o Launchpad `JobCore`
+ - Você implementou seu aplicativo SAPUI5 (incluindo as propriedades de navegação) no ambiente SAP BTP, Cloud Foundry.
 
 
-Once you've deployed your SAPUI5 app to SAP BTP, it becomes available to add to your launchpad site.
+Depois de implantar seu aplicativo SAPUI5 no SAP BTP, ele fica disponível para ser adicionado ao Launchpad.
 
 
 <br>
 
-### Step 1: Fetch updated content using the Provider Manager
+### Passo 1: Buscar conteúdo atualizado usando o Provider Manager
 
-1. Go back to the Administration environment of SAP Build Work Zone, standard edition.
+1. Volte para o ambiente de administração do SAP Build Work Zone, standard edition.
 
-2. Click the **Channel Manager** icon to view any available content channels. In this screen, administrators can create content channels, e.g. to consume federated content from a provider system like SAP S/4HANA.
+2. Clique no ícone **Channel Manager** para visualizar os content channels. Nesta tela, os administradores podem criar canais de conteúdo, por exemplo, para consumir conteúdo federado de um sistema provedor como o SAP S/4HANA.
 
     ![Open Channel Manager](images/1-open-channel-manager.png)
 
-3. In the **HTML5 Apps** row, click the **Update content** icon to consume any newly deployed apps for integration. You will see a message that the content is being updated. Wait till the status is set to **Updated**.
+3. Na linha **HTML5 Apps**, clique no ícone **Update content** para consumir todos os aplicativos implantados recentemente para integração. Você verá uma mensagem informando que o conteúdo está sendo atualizado. Aguarde até que o status seja definido como **Updated**.
 
-    >The **HTML5 Apps** content channel is available by default out of the box. Any app using the managed app router that you deploy to SAP BTP is automatically added as content to this channel.
+    >O canal **HTML5 Apps** está disponível por padrão. Qualquer aplicativo usando o roteador de aplicativo gerenciado implantado no SAP BTP é adicionado automaticamente como conteúdo a este canal.
 
     ![Update the HTML5 Provider](images/2-update-html5.png)
 
 <br>
 
-### Step 2: Add your deployed SAPUI5 app to your content
+### Etapa 2: adicione seu aplicativo SAPUI5 implantado ao seu conteúdo
 
-1. Click the Content Manager icon in the side panel to open the **Content Manager**.
+1. Clique no ícone Content Manager no painel lateral para abrir **Content Manager**.
 
     ![Open Content Editor](images/3-go-to-content-manager.png)
 
-    >The **Content Manager** has two tabs: **My Content** where you can manually configure content items and view any other available content items, and the **Content Explorer** where you can explore exposed content from available content channels, select the content, and add it to your own content.
+    >O **Content Manager**  tem duas abas: **My Content** , onde você pode configurar manualmente os itens de conteúdo e visualizar quaisquer outros itens de conteúdo disponíveis, e o  **Content Explorer**, onde pode explorar o conteúdo exposto de canais de conteúdo disponíveis, selecionar o conteúdo e adicioná-lo ao seu próprio conteúdo .
 
-2. Click the **Content Explorer** tab to explore content from the available content providers.
+2. Clique na aba **Content Explorer** para ver os provedores de conteúdo disponíveis.
 
     ![Open Content Explorer](images/4-content-explorer.png)
 
-3. Select the **HTML5 Apps** provider.
+3. Selecione o provedor **HTML5 Apps**.
 
     ![Select the HTML5 tile](images/5-select-HTML5.png)
 
-4. You'll see that your `Hello World` app that you've just created in SAP Business Application Studio, already exists in this provider. Select it and click **+ Add to My Content**.
+4. Você verá que seu `Hello World`já existe neste provedor. Selecione-o e clique em **+ Add to My Content**.
 
     ![Add app to My Content](images/6-add-hello-world.png)
 
-5. Click the **My Content** tab.
+5. Clique na guia **My Content**.
 
-    ![Click My Content](images/7-app-in-my-content.png)
-
-    Note that your `Hello World` app is in the list of content items.
+    ![Click My Content](images/7-app-in-my-content.png)   
 
 
 <br>
 
 
-### Step 3: Create group and assign app to it
+### Etapa 3: crie um grupo e atribua um aplicativo a ele
 
-In this step, you'll create a new group and assign the `Hello World` app to it.
+Nesta etapa, você criará um novo grupo e atribuirá o `Hello World` a ele.
 
-1. Click **+ New** in the **Content Manager** and select **Group** to create a new group.
+1. Clique em **+ New** no **Content Manager** e selecione **Group** para criar um novo grupo.
 
     ![Add new group](images/8-add-group.png)
 
-2. Enter `Simple Apps` as the **Title**.
+2. Digite `Simple Apps` como **Title**.
 
-3. In the **Assignments** panel on the right, click in the search box to see a list of apps.
+3. No painel **Assignments**  à direita, clique no input indicado e veja a lista de aplicativos.  
 
-    >If you have many apps, you can type some letters of your app name in the search bar, (for example, `he`) to search for the app.
-
-4. Next to the `Hello World` app, click the **+** icon to assign your app to this group.
+4. Ao lado do `Hello World` , clique em **+** para atribuir seu app no grupo.
 
     ![Assign app to group](images/9-edit-group.png)
 
-    You'll see that the icon changes.
+    Observe que o icone muda.
 
-4. Click **Save**.
+4. clique em **Save**.
 
     ![Save](images/10-save.png)
 
 
 <br>
 
-### Step 4: Assign app to Everyone role
+### Etapa 4: atribuir o aplicativo a Role Everyone
 
-In this step, you'll assign the `Hello World` app to the `Everyone` role. This is a default role - content assigned to the `Everyone` role is visible to all users. In addition, the `Everyone` role is by default assigned to every site, so that it is not necessary to assign this role to your site to make its content available.
+Nesta etapa, você atribuirá o `Hello World` a role `Everyone`. Esta é uma role padrão - o conteudo atribuido a role `Everyone` é visivel para todos usuários. Além de que a role `Everyone` por padrão é atribuida a todos os launchpads não sendo necessário cria-la.
 
-1. Click the back icon to go back to the **Content Manager**.
+1. Clique no ícone Voltar para voltar ao **Content Manager**.
 
     ![Open Content Manager](images/11-back.png)
 
-2. Click the `Everyone` role to open the role editor.
+2. Clique na role `Everyone`.
 
     ![Everyone role](images/12-everyone-role.png)
 
-3. Click **Edit**.
+3. Clique em **Edit**.
 
     ![Edit role](images/13-edit-role.png)
 
-4. Click the search box in the **Assignments** panel on the right. Any available apps are shown in the list below.
+4. Clique no input **Assignments** e irá aparecer a lista abaixo com todos os aplicativos disponíveis 
 
-5. Next to the `Hello World` app, click the **+** icon. You'll see that the icon changes.
+5. Atribua o app `Hello World`.
 
-6. Click **Save**.
+6. Clique em **Save**.
 
     ![Assign app and save role](images/14-assign-and-save-role.png)
 
 <br>
 
-### Step 5: Review your site
+### Etapa 5: revise seu site
 
-1. Click the **Site Directory** icon to open the Site Directory.
+1.  Clique em **Site Directory** para abrir o Launchpad Directory.
 
     ![Open site directory](images/15-go-to-site-directory.png)
 
-2. Click the **Go to site** icon on the site tile. The site opens in a new browser tab.
+2. Clique em **Go to site**. O Launchpad é aberto no navegador.
 
     ![Open site](images/16-go-to-site.png)
 
-    You will see both apps that you have created in your site. In the `Simple Apps` group, you will see the `Hello World` app that you just created.
+    Você verá os dois aplicativos que criou em seu Launchpad. No grupo `Simple Apps` , verá o `Hello World` app that you just created.
 
     ![See all apps](images/17-view-site.png)
 
 
-3. Click the app to launch it. You see an empty app showing just its title `Hello World`.
+3. Clique no aplicativo para iniciá-lo. Você vê um aplicativo vazio mostrando apenas o título `Hello World`.
 
     ![View app](images/18-view-app.png)
 
 <br>
 
-## Summary
+## Resumo
 
-With this, you have successfully added your SAP Fiori app to your SAP Build Work Zone site.
+Com isso, você adicionou com sucesso seu aplicativo SAP Fiori ao seu site SAP Build Work Zone.
 
-Continue to - [Exercise 3 - Access your site with SAP Mobile Start](../../ex3/README.md)
+Continue para - [Exercício 3 - Acesse seu site com o SAP Mobile Start](../../ex3/README.md)
 

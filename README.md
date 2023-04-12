@@ -18,7 +18,7 @@ Este repositório contém o material para a sessão SAP BTP Experience 2023 - Um
 
 ## Visão geral
 
-Este Hands-On apresenta aos participantes a criação de um site com o SAP Build Work Zone, standard edition (anteriormente conhecido como serviço SAP Launchpad) em sua conta de avaliação gratuita. Os participantes aprenderão como consumir conteúdo federado de sistemas SAP S/4HANA e como adicionar um aplicativo personalizado desenvolvido ao site. Por fim, eles consumirão seu site no aplicativo SAP Mobile Start.
+Este Hands-On apresenta aos participantes a criação de um site com o SAP Build Work Zone, standard edition (anteriormente conhecido como serviço SAP Launchpad) em sua conta Trial gratuita. Os participantes aprenderão como consumir conteúdo federado de sistemas SAP S/4HANA e como adicionar um aplicativo personalizado desenvolvido ao site. Por fim, eles consumirão seu site no aplicativo SAP Mobile Start.
 
 Antes de começar com os exercícios, dê uma olhada na seguinte [Visão geral do SAP Build Work Zone](intro/overview.md).
 
@@ -31,7 +31,7 @@ O Hands-On consiste em quatro seções principais:
 
 ## Requisitos
 
-Este exercício é executado em um ambiente de teste SAP BTP. Você precisa primeiro se registrar para obter sua própria conta de avaliação gratuita. Você pode se registrar em uma [conta de avaliação usando este link](https://account.hana.ondemand.com/#/home/welcome). Para o último exercício, você também precisará de um telefone celular (iOS ou Android) capaz de executar o SAP Mobile Start.
+Este exercício é executado em um ambiente de teste SAP BTP. Utilizando este [link](https://account.hana.ondemand.com/#/home/welcome) você irá se registrar para obter sua conta Trial no BTP. Para o último exercício, você também precisará de um telefone celular (iOS ou Android) capaz de executar o SAP Mobile Start.
 
 ## exercícios
 

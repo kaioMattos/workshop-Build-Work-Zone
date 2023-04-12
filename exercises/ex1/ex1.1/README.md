@@ -1,49 +1,49 @@
 
-# Create a site with SAP Build Work Zone, standard edition
+# Crie um site com o SAP Build Work Zone, standard edition
 
-In this tutorial you will create a site for a recruiting company called `JobCore`. You will then a add business app to this site.
+Neste tutorial, você criará um site para uma empresa de recrutamento chamada `JobCore`. . Em seguida, você adicionará um aplicativo a este site.
 
-## Prerequisites
-You have subscribed to the SAP Launchpad service and assigned yourself to the `Launchpad_Admin` role.
+## Pré-requisitos
+Você se inscreveu no serviço SAP Launchpad e atribuiu a si mesmo a `Launchpad_Admin` role.
 
 <br>
 
-### Step 1: Create a site
+### Etapa 1: criar um site
 
-When you access the admin environment, the Site Directory is in focus. From here you will create your new site.
+Quando você acessa o ambiente admin, o Site Directory está em foco. A partir daqui, você criará seu novo site.
 
-> In the side panel of the admin environment, you see four tools. The **Site Directory** where you are going to create a new site. All sites that you create will be displayed here. The **Content Manager** where you will manage cross-site content such as business apps. The **Channel Manager** where you manage different channels that expose business content that you can integrate into your sites. The fourth icon opens **Settings** where you can configure various settings related to SAP Build Work Zone, standard edition.
+> No painel lateral do ambiente administrativo, você vê quatro ferramentas. O **Site Directory** onde você criará um novo site. Todos os sites que você criar serão exibidos aqui. O **Content Manager** onde você gerenciará o conteúdo entre sites, como aplicativos **Channel Manager** onde você gerencia diferentes canais que expõem conteúdos de negócios que você pode integrar em seus sites. O quarto ícone abre **Settings** onde você pode definir várias configurações relacionadas ao SAP Build Work Zone, standard edition.
 
 
-1. Click **Create Site**.
+1. Clique em **Create Site**.
 
     ![Create site](../ex1.2/images/1a-create-new-site.png)
 
-2. Enter `JobCore` as the site name and click **Create**.
+2. Digite `JobCore` como o nome do site e clique em **Create**.
 
     ![Name site](../ex1.2/images//2a-name-site.png)
 
-You've just created a site called `JobCore`.
+Você acabou de criar um site chamado `JobCore`.
 
 <br>
 
-### Step 2: Navigate to the Site Directory
+### Passo 2: Navegue até o Site Directory
 
-When you create a site, you are directed to the **Site Settings** screen where you can edit the site settings and assign roles to the site. 
+Ao criar um site, você é direcionado para a tela **Site Settings**, onde pode editar as configurações do site e atribuir funções ao site.
 
-> In the site settings, you can configure various site capabilities, e.g. integration with SAP Mobile Start, Enterprise Search. You can enable Key User Adaptation and define with options users should have, e.g. if users are able to personalize the site or select a theme or a language.
+> Nas configurações do site, você pode configurar vários recursos do site, por exemplo, integração com SAP Mobile Start, Enterprise Search. Você pode ativar a Adaptação do usuário principal e definir as opções que os usuários devem ter, por exemplo, se os usuários podem personalizar o site ou selecionar um tema ou um idioma.
 
-Navigate back to the **Site Directory** to view the site tile.
+Navegue de volta ao **Site Directory** para visualizar o site.
 
   ![Navigate to site directory](../ex1.2/images//3a-to-site-directory.png)
 
 <br>
 
-## Summary
+## Resumo
 
-You have created your first site. For now, the site is empty.
+Você criou seu primeiro site. Por enquanto, o site está vazio.
 
-Continue to - [Exercise 1.2 - Add an app to your site](../ex1.2/README.md) to add a business app to your site.
+Continue para - [ Exercício 1.2 - Adicionar um aplicativo ao seu site](../ex1.2/README.md) para adicionar um aplicativo a ele.
 
 
 

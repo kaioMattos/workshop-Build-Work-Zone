@@ -1,157 +1,157 @@
-# Exercise 2.2 - Create an SAP Fiori App Using SAP Business Application Studio
+# Exercício 2.2 - Criar um aplicativo SAP Fiori usando o SAP Business Application Studio
 
-In this exercise, you will develop a simple SAPUI5 freestyle application, adhering to SAP Fiori design guidelines. The flow consists of two parts:
+Neste exercício, você desenvolverá um aplicativo SAPUI5 freestyle simples, seguindo as diretrizes de design do SAP Fiori. O fluxo consiste em duas partes:
 
-1. Running a wizard that creates a multi-target application (MTA) project that is configured to use Managed Application Router. 
-2. Creating an SAPUI5 app from a template within this project and preview it.
+1.Executar um assistente que cria uma aplicação multi-target (MTA) configurado para usar o Managed Application Router. 
+2. Criar um aplicativo SAPUI5 a partir de um template e visualizá-lo.
 
 <br>
 
-### Step 1: Create new Multitarget Application project
+### Etapa 1: criar um novo aplicativo Multitarget 
 
-> An MTA is required in order to create the deployment artifact for SAP BTP, Cloud Foundry environment. If you are not familiar with the MTA concepts, read this [guide](https://www.sap.com/documents/2016/06/e2f618e4-757c-0010-82c7-eda71af511fa.html). Creating the MTA project upfront does not take long and will allow you to save time later in the exercise.
+> Um MTA é necessário para criar o artefato de implementação para o ambiente SAP BTP, Cloud Foundry. Se você não estiver familiarizado com os conceitos do MTA, leia este [guia](https://www.sap.com/documents/2016/06/e2f618e4-757c-0010-82c7-eda71af511fa.html). A criação antecipada do projeto MTA não leva muito tempo e permitirá que você economize tempo posteriormente no exercício.
 
-The search window on top of the page gives you easy access to search across your files. It also allows you to search for commands. 
+A janela de pesquisa na parte superior da página oferece acesso fácil para pesquisar seus arquivos. Ele também permite que você procure por comandos.
 
-1. Enter **>** into the Search window to search for a command. 
+1. Digite **>**  no input marcado para para procurar um comando.
 
    ![Open command palette](images/n01-search-command.png)
 
-> You could also access the command palette via the **menu** icon on the top left of the screen and **View > Command Palette** 
+> Você também pode acessar a paleta de comandos por meio do ícone  **menu** no canto superior esquerdo da tela e **View > Command Palette** 
 
-2.  Type `fiori: open` in the search field and select the **Fiori: Open CF Application Router Generator** command.
+2.  Digite  `fiori: open` no campo de pesquisa e selecione o comando **Fiori: Open CF Application Router Generator**.
 
     ![Find CF Application Router Generator](images/n02-search-fiori.png)
 
-4. The **Application Router Generator Wizard** tab is opened. For **Application Router Configuration**, select the following, and click **Finish**.
+3. A guia **Application Router Generator Wizard** é aberta. Para **Application Router Configuration**,  selecione o seguinte e clique em **Finish**.
 
-    | Step | Parameter | Value |
+    | Etapa | Parâmetro | Valor |
     |:-----|:----------|:------|
-    | A | Application router project path | **/home/user/projects** (default) |
-    | B | MTA ID | **`FioriDemo`** |
-    | C | MTA Description | Can be left empty (default) |
+    | A | Application router project path | **/home/user/projects** (padrão) |
+    | B | MTA ID   | **`FioriDemo`** |
+    | C | MTA Description  | Pode ser deixado em branco (padrão) |
     | D | Add route module | **Managed Approuter** |
 
     ![Fill-in cf mta and approuter wizard](images/n03c-CreateRoute.png)
 
-    >When end-users access an app in the Cloud Foundry environment, they actually access the Application Router first. The application router is used to serve static content, authenticate users, rewrite URLs, and forward or proxy requests to other micro services while propagating user information.
+    >Quando os usuários finais acessam um aplicativo no ambiente do Cloud Foundry, na verdade, eles acessam primeiro o Application Router. O roteador de aplicativo é usado para fornecer conteúdo estático, autenticar usuários, reescrever URLs e encaminhar ou fazer proxy de solicitações para outros microsserviços enquanto propaga as informações do usuário.
 
-    >The recommendation is to use **Managed Application Router** that provides many benefits, when compared to Standalone Application Router, such as save resources, lower maintenance efforts, etc. Standalone Application Router should only be used in advanced cases, for example when application router extensibility is required. More information is available in [Developing HTML5 Applications in the Cloud Foundry Environment](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/11d77aa154f64c2e83cc9652a78bb985.html)
+    >A recomendação é usar **Managed Application Router** que oferece muitos benefícios, quando comparado ao Standard Application Router, como economia de recursos, menor esforço de manutenção, etc. O Standard Application Router deve ser usado apenas em casos avançados, por exemplo, quando a extensibilidade do roteador de aplicativo é necessária . Mais informações estão disponíveis em [Desenvolvendo aplicativos HTML5 no ambiente Cloud Foundry](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/11d77aa154f64c2e83cc9652a78bb985.html)
 
-5. Wait until the creation of project is completed. A notification that "The files have been generated" appears at the bottom right of the screen.
+4. Aguarde até que a criação do projeto seja concluída. Uma notificação de que "Os arquivos foram gerados" aparece no canto inferior direito da tela.
 
     ![project creation completed](images/04c-FilesGenerated.png)
 
 <br>
 
-### Step 2: Add your folder to a workspace
+### Etapa 2: adicionar sua pasta a um espaço de trabalho
 
-Your workspace is an entity containing your project's settings, debug configurations, and task configurations. You can choose to create a new workspace or for each project or you can set up a multi-root environment that holds several projects. You can find out more about **Workspaces** in the SAP Business Application Studio [documentation](https://help.sap.com/viewer/9d1db9835307451daa8c930fbd9ab264/Cloud/en-US/0919ce1ca4a342628e49c0f5e9c8cdcf.html).
+Seu espaço de trabalho é uma entidade que contém as configurações de seu projeto, configurações de depuração e configurações de tarefas. Você pode optar por criar um novo espaço de trabalho ou para cada projeto ou pode configurar um ambiente multi-root que contém vários projetos. Você pode saber mais sobre **Workspaces** na [documentação](https://help.sap.com/viewer/9d1db9835307451daa8c930fbd9ab264/Cloud/en-US/0919ce1ca4a342628e49c0f5e9c8cdcf.html) do SAP Business Application Studio.
 
-1. Click the menu icon and select **File | Add Folder to Workspace...** to open the **Add Folder to Workspace** dialog.
+1. Clique no ícone do menu e selecione **File | Add Folder to Workspace...** para abrir o dialog **Add Folder to Workspace** dialog.
 
     ![open workspace dialog](images/n04c-add-to-workspace.png)
 
-2. The **Add Folder to Workspace** dialog is opened at the center of the SAP Business Application Studio window. Select the **projects** folder. 
+2. O dialog **Add Folder to Workspace** é aberta no centro da janela do SAP Business Application Studio. Selecione a pasta **projects**. 
 
     ![open workspace dialog](images/n05-select-projects.png)
    
-3. Now select the **`FioriDemo`** project and click **OK**.
+3. Agora selecione o **`FioriDemo`** projeto e clique em **OK**.
 
     ![select-FioriDemo](images/n06-confirm.png)
 
-3. SAP Business Application Studio reloads with the `FioriDemo` project open in a yet untitled workspace. In the Explorer view you can see the `FioriDemo` project, its folder structure, and files.
+4. O SAP Business Application Studio é recarregado com o `FioriDemo` aberto em um espaço de trabalho ainda sem título. Na visualização do Explorer, você pode ver o `FioriDemo` , sua estrutura de pastas e arquivos.
 
-    >The status bar color changes to blue, indicating that a workspace is open.
+    >A cor da barra de status muda para azul, indicando que um espaço de trabalho está aberto.
 
     ![workspace_open](images/n07-untitled-workspace.png)
 
 <br>
 
-### Step 3: Create an SAPUI5 app from a template
+### Etapa 3: criar um aplicativo SAPUI5 a partir de um modelo
 
-Using the app creation wizard you can at any point click the Back button to go back to the previous step, or click a specific wizard step to go back to that step.
+Usando o assistente de criação de aplicativo, você pode, a qualquer momento, clicar no botão Voltar para voltar à etapa anterior ou clicar em uma etapa específica do assistente para voltar a essa etapa.
 
-1. In the *Get Started* tab click **Start from template**.
+1. Na aba *Get Started* clique em **Start from template**.
 
    ![Start from Template](images/n07a-start-from-template.png)
 
-2. Select the **SAP Fiori Application** tile, and click **Start**.
+2. Selecione o tile **SAP Fiori Application**, e clique em **Start**.
 
    ![SAP Fiori](images/n08-fiori-app.png)
 
-3. In the *Template Selection* screen, select *Application Type* **SAPUI5 freestyle** from the drop-down, then select the template **SAPUI5 Appliction** and click **Next**.
+3. Na tela *Template Selection*, selecione Tipo de aplicativo *Application Type* **SAPUI5 freestyle** no menu suspenso, selecione o modelo **SAPUI5 Appliction** e clique em **Next**.
 
    ![SAPUI5 Freestyle](images/n09-sapui5-app.png)
 
-4. For *Data Source and Service Selection*, select **None** from the drop-down as for this simple app, you will not consume any data from a backend system. Then click **Next**.
+4. Para *Data Source and Service Selection*, selecione **None** o menu suspenso, pois para este aplicativo, você não consumirá nenhum dado de um sistema de back-end. Em seguida, clique em **Next**.
 
    ![Select Data Source](images/n10-data-source.png)
 
-5. In the next step, you can change the name of the view. You can simply keep View1 here and click **Next**.
+5. Na próxima etapa, você pode alterar o nome da view. Mantendo View1, agora clique em **Next**.
 
    ![View name](images/n11-view-name.png)
 
-6. Select the following **Project Attributes**, then click **Next**.
+6. Selecione os seguintes **Project Attributes**, e clique em **Next**.
 
-    | Step | Parameter | Value |
+    | Etapa | Parâmetro | Valor |
     |:-----|:----------|:------|
     | A | Module name | **`helloworld`** |
     | B | Application title | **Hello World** |
-    | C | Application namespace | **teched** |
-    | D | Description | **An empty SAPUI5 freestyle application** |
-    | E | Project folder path | **`/home/user/projects/FioriDemo`** (default)|
-    | F | Minimum SAPUI5 version | **1.102.1** (default) |
-    | G | Add deployment configuration | **Yes** (default)|
+    | C | Application namespace | **técnico** |
+    | D | Description | **Um aplicativo de freestyle SAPUI5 vazio** |
+    | E | Project folder path | **`/home/user/projects/FioriDemo`** (padrão)|
+    | F | Minimum SAPUI5 version | **1.102.1** (padrão) |
+    | G | Add deployment configuration | **Yes** (padrão)|
     | H | Add FLP configuration | **Yes** |
-    | I | Configure advanced options | **No** (default) |
+    | I | Configure advanced options | **No** (padrão) |
 
    ![Project Attributes](images/n12a-attributes.png)
     
-7. For **Deployment Configuration**, keep the defaults **Cloud Foundry** and *Destination Name* **None**. Click **Next**.
+7. Para  **Deployment Configuration**, mantenha os padrões **Cloud Foundry** e *Destination Name* **None**. Clique em **Next**.
 
    ![Deployment Settings](images/n13-deployment.png)
 
-8. Finally, in the **Fiori Launchpad Configuration** screen, select the following, and click **Finish**.
+8. Por fim, na tela **Fiori Launchpad Configuration** , selecione o seguinte e clique em **Finish**.
 
     | Step | Parameter | Value |
     |:-----|:----------|:------|
     | A | Semantic Object | **helloworld** |
     | B | Action | **display** |
     | B | Title | **My Hello World** |
-    | B | Subtitle (optional) | Add a subtitle of your choice |
+    | B | Subtitle (optional) | Adicione uma legenda de sua escolha |
 
     ![Launchpad configuration](images/n14-flp-config.png)
 
 
-9. Wait until the installation of project dependencies is completed. A notification that "The project has been generated" appears at the bottom right of the screen, The **Application Information** tab is opened, and the files and project structure in the **Explorer** view are updated.
+9. Aguarde até que a instalação das dependências do projeto seja concluída. Uma notificação de que "O projeto foi gerado" aparece na parte inferior direita da tela, a guia **Application Information** é aberta e os arquivos e a estrutura do projeto na exibição do **Explorer** são atualizados.
     
     ![application generated](images/n15-project.png)
 
 <br>
 
-### Step 4: Run the App Locally in the Dev Space
+### Etapa 4: execute o aplicativo localmente no Dev Space
 
-To test your app, you can now run it locally within SAP Business Application Studio.
+Para testar seu aplicativo, agora você pode executá-lo localmente no SAP Business Application Studio.
 
-1.	In the *Application Information* tab, click the **Preview Application** tile. A set of run configuration options display in the top-center of the screen.
+1.	Na guia *Application Information*, clique no tile **Preview Application** .Um conjunto de opções de configuração de execução é exibido na parte superior central da tela.
 
     ![Preview App](images/n16-preview-app.png)
 
-2.	Select the first entry **`Start fiori run...`** to run the app locally in a sandbox launchpad shell.
+2.	Selecione a primeira entrada **`Start fiori run...`** para executar o aplicativo localmente.
 
     ![Start helloworld](images/n17-start-options.png)
 
-3. A new browser tab opens showing the app. As you did not add any content, the app only shows a title.
+3. Uma nova guia do navegador é aberta mostrando o aplicativo. Como você não adicionou nenhum conteúdo, o aplicativo mostra apenas um título.
 
-    >If your browser does not allow opening a new tab, you may see a message in the upper left corner with a link where you can allow opening a new tab.
+    >Se o seu navegador não permitir a abertura de uma nova guia, você poderá ver uma mensagem no canto superior esquerdo com um link para permitir a abertura de uma nova guia.
 
     ![App running locally](images/n18-app-preview.png)
 
 <br>
 
-## Summary
+## Resumo
 
-You've now created a simple app. In the next exercise you will build the app and deploy it to Cloud Foundry.
+Agora você criou um aplicativo simples. No próximo exercício, você criará o aplicativo e o implementará no Cloud Foundry.
 
-Continue to - [Exercise 2.3 - Build and Deploy your application ](../ex2.3/README.md)
+Continue para - [Exercício 2.3 - Crie e implemente seu aplicativo ](../ex2.3/README.md)
