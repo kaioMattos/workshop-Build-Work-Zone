@@ -43,7 +43,7 @@ Navegue de volta ao **Site Directory** para visualizar o site.
 
 Você criou seu primeiro site. Por enquanto, o site está vazio.
 
-Continue para - [ Exercício 1.2 - Adicionar um aplicativo ao seu site](../ex1.2/README.md) para adicionar um aplicativo a ele.
+Proximo - [ Exercício 1.2 - Adicionar um aplicativo ao seu site](../ex1.2/README.md) para adicionar um aplicativo a ele.
 
 
 

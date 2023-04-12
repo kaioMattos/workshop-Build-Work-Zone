@@ -59,5 +59,5 @@ Neste exercício você aprenderá:
 ## Resumo
 
 Com isso, você concluiu com sucesso a implementação do seu aplicativo SAP Fiori no SAP BTP usando o SAP Business Application Studio.
-Continue para - [ Exercício 2.4 - Integrar seu aplicativo SAPUI5 em seu site](../ex2.4/README.md)
+Proximo - [ Exercício 2.4 - Integrar seu aplicativo SAPUI5 em seu site](../ex2.4/README.md)
 

@@ -20,7 +20,7 @@ Usando o assistente de criação de aplicativo, você pode, a qualquer momento, 
 
    ![SAPUI5 Freestyle](images/n03-choose-app-type.png)
 
-4. Selecione **SAPUI5 Appliction** escolhaaa basic UI Application e clique em **Next**. 
+4. Selecione **SAPUI5 Appliction** escolha basic UI Application e clique em **Next**. 
 
    ![SAPUI5 App Type](images/n04-choose-empty-UI5-App.png)
    
@@ -48,7 +48,7 @@ Usando o assistente de criação de aplicativo, você pode, a qualquer momento, 
 
    ![Project Attributes](images/n07-enter-project-attributes.png)
     
-8. Para **Deployment Configuration**, selecione **Cloud Foundry** na lista e o *Destination Name* como **None**. clique em **Next**. selecione o botão de opção **Yes** no input `Add Application to managed application router?`
+8. Para **Deployment Configuration**, selecione **Cloud Foundry** na lista, o *Destination Name* como None, selecione a opção **Yes** no input `Add Application to managed application router?`e clique em **Next**. 
 
    ![Deployment Settings](images/n08-deployment-config.png)
 
@@ -98,4 +98,4 @@ Para testar seu aplicativo, agora você pode executá-lo localmente no SAP Busin
 
 Agora você criou um aplicativo simples. No próximo exercício, você criará o aplicativo e o implementará no Cloud Foundry.
 
-Continue para - [Exercício 2.3 - Crie e implemente seu aplicativo ](../ex2.3/README.md)
+Proximo - [Exercício 2.3 - Crie e implemente seu aplicativo ](../ex2.3/README.md)

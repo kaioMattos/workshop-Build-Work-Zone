@@ -132,5 +132,5 @@ Nesta etapa, você atribuirá o `Hello World` a role `Everyone`. Esta é uma rol
 
 Com isso, você adicionou com sucesso seu aplicativo SAP Fiori ao seu site SAP Build Work Zone.
 
-Continue para - [Exercício 3 - Acesse seu site com o SAP Mobile Start](../../ex3/README.md)
+Proximo - [Exercício 3 - Acesse seu site com o SAP Mobile Start](../../ex3/README.md)
 

@@ -154,4 +154,4 @@ Para testar seu aplicativo, agora você pode executá-lo localmente no SAP Busin
 
 Agora você criou um aplicativo simples. No próximo exercício, você criará o aplicativo e o implementará no Cloud Foundry.
 
-Continue para - [Exercício 2.3 - Crie e implemente seu aplicativo ](../ex2.3/README.md)
+Proximo - [Exercício 2.3 - Crie e implemente seu aplicativo ](../ex2.3/README.md)

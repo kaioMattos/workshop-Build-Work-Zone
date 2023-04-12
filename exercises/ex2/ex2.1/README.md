@@ -54,5 +54,5 @@ O SAP Business Application Studio é um ambiente de desenvolvimento disponível 
 
 Você acessou com sucesso o SAP Business Application Studio e criou um Dev Space.
 
-Continue em - [Exercício 2.2 - Criar um aplicativo SAP Fiori usando o SAP Business Application Studio .](../ex2.2-alternative/README.md).
+Proximo - [Exercício 2.2 - Criar um aplicativo SAP Fiori usando o SAP Business Application Studio .](../ex2.2-alternative/README.md).
 
