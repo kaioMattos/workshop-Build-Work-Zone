@@ -1,60 +1,55 @@
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2022-AD280)](https://api.reuse.software/info/github.com/SAP-samples/teched2022-AD280)
 
 
-# AD280 - A Beginning to End Workshop on Configuring SAP Build Work Zone, standard edition
+# Um Hands-On do começo ao fim sobre a configuração SAP Build Work Zone, standard edition. 
 
 ![Title](Title.png)
 
 ## Descrição
 
-This repository contains the material for the SAP TechEd 2022 session called Session AD280 - A Beginning to End Workshop on Configuring SAP Build Work Zone, standard edition.  
+Este repositório contém o material para a sessão SAP BTP Experience 2023 - Um Hands-On do começo ao fim sobre a configuração SAP Build Work Zone, standard edition.
 
-> **NOTE**: SAP Launchpad Service is part of the SAP Build portfolio. In early 2023, we launch a new experience with the new name **SAP Build Work Zone, standard edition**. You can learn more in the [Roadmap Explorer](https://roadmaps.sap.com/board?PRODUCT=73554900100800003081&PRODUCT=73555000100800002781&range=CURRENT-LAST#Q4%202022). 
-> Please be aware that some screenshots or systems in this Hands-on material might still contain the former name *SAP Launchpad Service*. 
+> **NOTA**: O SAP Launchpad Service faz parte do portfólio SAP Build. No início de 2023, lançamos uma nova experiência com o novo nome SAP Build Work Zone, edição padrão . Você pode aprender mais no [Roadmap Explorer](https://roadmaps.sap.com/board?PRODUCT=73554900100800003081&PRODUCT=73555000100800002781&range=CURRENT-LAST#Q4%202022). 
+> Esteja ciente de que algumas capturas de tela ou sistemas neste material prático ainda podem conter o antigo nome SAP Launchpad Service*. 
 > ![SAP Build](Disclaimer.png)
 
-> Product names and announced changes
+> Nomes de produtos e mudanças anunciadas
 > ![SAP Build Work Zone](SAP_Build_Work_Zone.png)
 
-## Overview
+## Visão geral
 
-This workshop introduces attendees to the creation of a site with SAP Build Work Zone, standard edition (formerly known as SAP Launchpad service ) in their free trial account. Attendees will learn how to consume federated content from an SAP S/4HANA systems and how to add a custom developed app to the site. Finally, they will consume their site on the SAP Mobile Start app.
+Este workshop apresenta aos participantes a criação de um site com o SAP Build Work Zone, standard edition (anteriormente conhecido como serviço SAP Launchpad) em sua conta de avaliação gratuita. Os participantes aprenderão como consumir conteúdo federado de sistemas SAP S/4HANA e como adicionar um aplicativo personalizado desenvolvido ao site. Por fim, eles consumirão seu site no aplicativo SAP Mobile Start.
 
-Before getting started with the exercises, please take a look at the following [general overview of SAP Build Work Zone](intro/overview.md).
+Antes de começar com os exercícios, dê uma olhada na seguinte [Visão geral do SAP Build Work Zone](intro/overview.md).
 
-The workshop consists of four main sections:
-1. Create your first site and add one application to it
-2. Consume SAP S/4HANA Business content in the site (this part will be shown as a demo, but you can follow the [Enhance Your SAP Launchpad Site with Federated SAP S/4HANA Content tutorial](https://developers.sap.com/mission.launchpad-s4hana.html) to consume federated content from your own SAP S/4HANA trial system. Learn more about [content federation](intro/federation.md).
-3. Create your own custom developed app with the Business Application Studio and easily integrate it into your site. 
-Due to time constraints, you will only create a very simple app during the workshop. Alternatively, you can also do [this advanced exercise](https://developers.sap.com/tutorials/appstudio-fioriapps-create.html) instead and create an app that consumes data from a backend system. But note that you would first need to [create an account on the SAP Gateway demo system](https://developers.sap.com/tutorials/gateway-demo-signup.html) and then [connect your BTP trial to it](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-gateway-connection.html). This will take about 20 minutes longer.
-4. Access your site with SAP Mobile Start.
-
-
-## Requirements
-
-This exercise is run in an SAP BTP trial environment. You need to first register to get your own free trial accoount. You can register to a trial account using this link: Create a trial account. Scroll down and click Get trial now.
-For the last exercise, you will also need a mobile phone (iOS or Android) capable of running SAP Mobile Start.
-
-## Exercises
-
-- [Exercise 0 - Set up SAP Launchpad service in your trial account](exercises/ex0/README.md)
-
-- Exercise 1 - Create your first launchpad site and add a URL app to the site
-    - [Exercise 1.1 - Create your first site](exercises/ex1/ex1.1/README.md)
-    - [Exercise 1.2 - Add an application to your site](exercises/ex1/ex1.2/README.md)
-
-- Exercise 2 - Integrate a custom developed SAPUI5 app into your site
-    - [Exercise 2.1 - Set Up SAP Business Application Studio for Development](exercises/ex2/ex2.1/README.md)
-    - [Exercise 2.2 - Create an SAP Fiori App Using SAP Business Application Studio](exercises/ex2/ex2.2-alternative/README.md)
-    - [Exercise 2.3 - Build and Deploy Your SAP Fiori App to SAP Business Technology Platform](exercises/ex2/ex2.3/README.md)
-    - [Exercise 2.4 - Integrate Your SAPUI5 App into Your Launchpad Site](exercises/ex2/ex2.4/README.md)
-
-- [Exercise 3 - Access your site with SAP Mobile Start](exercises/ex3/README.md)
+O workshop consiste em quatro seções principais:
+1. Crie seu primeiro site e adicione um aplicativo a ele
+2. Consumir conteúdo SAP S/4HANA Business no site (esta parte será mostrada como uma demonstração, mas você pode seguir o [tutorial Melhore seu site SAP Launchpad com conteúdo federado SAP S/4HANA](https://developers.sap.com/mission.launchpad-s4hana.html) para consumir conteúdo federado de sua própria avaliação do SAP S/4HANA sistema Saiba mais sobre [federação de conteúdo](intro/federation.md).
+3. Crie seu próprio aplicativo personalizado desenvolvido com o Business Application Studio e integre-o facilmente em seu site. Devido a limitações de tempo, você criará apenas um aplicativo muito simples durante o workshop. Alternativamente, você também pode fazer [este Exercicio](https://developers.sap.com/tutorials/appstudio-fioriapps-create.html) e criar um aplicativo que consome dados de um sistema de back-end. Mas observe que primeiro você precisa [criar uma conta no sistema de demonstração do SAP Gateway](https://developers.sap.com/tutorials/gateway-demo-signup.html) e, em seguida, [conectar seu teste BTP a ele](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-gateway-connection.html). . Isso levará cerca de 20 minutos a mais.
+4. Acesse seu site com o SAP Mobile Start.
 
 
-## How to obtain support
+## Requisitos
 
-Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
+Este exercício é executado em um ambiente de teste SAP BTP. Você precisa primeiro se registrar para obter sua própria conta de avaliação gratuita. Você pode se registrar em uma conta de avaliação usando este link: Crie uma conta de avaliação. Role para baixo e clique em Obter avaliação agora. Para o último exercício, você também precisará de um telefone celular (iOS ou Android) capaz de executar o SAP Mobile Start.
 
-## License
-Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
+## exercícios
+
+- [Exercício 0 - Configure o serviço SAP Launchpad em sua conta de teste](exercises/ex0/README.md)
+
+- Exercício 1 - Crie seu primeiro site de barra de ativação e adicione um aplicativo de URL ao site
+    - [Exercício 1.1 - Crie seu primeiro site](exercises/ex1/ex1.1/README.md)
+    - [Exercício 1.2 - Adicione um aplicativo ao seu site](exercises/ex1/ex1.2/README.md)
+
+- Exercício 2 - Integrar um aplicativo SAPUI5 desenvolvido sob medida em seu site
+    - [Exercício 2.1 - Configurar o SAP Business Application Studio para desenvolvimento](exercises/ex2/ex2.1/README.md)
+    - [Exercício 2.1 - Configurar o SAP Business Application Studio para desenvolvimento](exercises/ex2/ex2.2-alternative/README.md)
+    - [Exercício 2.3 - Crie e implemente seu aplicativo SAP Fiori no SAP Business Technology Platform](exercises/ex2/ex2.3/README.md)
+    - [Exercício 2.4 - Integre seu aplicativo SAPUI5 ao seu site Launchpad](exercises/ex2/ex2.4/README.md)
+
+- [Exercício 3 - Acesse seu site com o SAP Mobile Start](exercises/ex3/README.md)
+
+
+## Como obter suporte
+
+O suporte para o conteúdo deste repositório está disponível durante do hands-on para a qual este conteúdo foi projetado. Caso contrário, você pode solicitar suporte por meio da guia [Issues](../../issues) tab.
