@@ -16,11 +16,11 @@ Usando o assistente de criação de aplicativo, você pode, a qualquer momento, 
 
    ![SAP Fiori](images/n02-choose-template-type.png)
 
-3. Na tela *Template Selection*, selecione *Application Type* **SAPUI5 freestyle**
+3. Na tela *Template Selection*, selecione *Application Type* **SAPUI5 Fiori**
 
    ![SAPUI5 Freestyle](images/n03-choose-app-type.png)
 
-4. Selecione **SAPUI5 Application** escolha basic UI Application e clique em **Next**. 
+4. Selecione **BASIC** escolha basic UI Application e clique em **Next**. 
 
    ![SAPUI5 App Type](images/n04-choose-empty-UI5-App.png)
    
